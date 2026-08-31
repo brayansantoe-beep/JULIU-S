@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova proposta digital para a Julius Burgers. Cardápio, pedidos e informações em uma experiência moderna.">
+  <title>Julius Burgers | The Best Burgers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-note">PROPOSTA DE NOVO SITE • JULIUS BURGERS</div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand"><img src="assets/julius-logo.png" alt="Julius Burgers"></a>
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menu">☰</button>
+      <nav id="mainNav">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-order" href="#cardapio">Pedir agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-lines"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Chegou a hora de matar a fome.</span>
+          <h1>BURGER COM <em>PERSONALIDADE</em>.</h1>
+          <p>Uma experiência digital à altura da Julius: cardápio direto no site, acesso rápido aos pedidos e uma apresentação mais forte para a marca.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cardapio">Ver cardápio</a>
+            <a class="btn btn-outline" href="#contato">Falar com a Julius</a>
+          </div>
+          <div class="hero-points">
+            <span>Cardápio no site</span>
+            <span>Pedido rápido</span>
+            <span>Visual responsivo</span>
+          </div>
+        </div>
+
+        <div class="hero-logo-card">
+          <span class="stamp">THE BEST</span>
+          <img src="assets/julius-logo.png" alt="Logo Julius Burgers">
+          <div class="hero-caption">JULIUS BURGERS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div class="container highlight-grid">
+        <div>
+          <span class="eyebrow dark">DESTAQUE</span>
+          <h2>Burger do Palhaço em Dobro</h2>
+          <p>Área promocional pensada para dar visibilidade às campanhas da Julius e levar o cliente direto para o pedido.</p>
+        </div>
+        <a class="btn btn-dark" href="#cardapio">Conferir o cardápio</a>
+      </div>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">CARDÁPIO</span>
+            <h2>ESCOLHA SEU PRÓXIMO <em>PROTAGONISTA.</em></h2>
+          </div>
+          <p>Produtos organizados por categoria para o cliente encontrar rápido, comparar e seguir para o pedido.</p>
+        </div>
+
+        <div class="menu-tools">
+          <div class="filters">
+            <button class="filter active" data-filter="all">Todos</button>
+            <button class="filter" data-filter="burgers protagonistas">Burgers</button>
+            <button class="filter" data-filter="combos">Combos</button>
+            <button class="filter" data-filter="spin-off de frango">Frango</button>
+            <button class="filter" data-filter="kids">Kids</button>
+            <button class="filter" data-filter="porções">Porções</button>
+          </div>
+          <input id="search" type="search" placeholder="Buscar no cardápio...">
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          
+      <article class="menu-card" data-category="burgers protagonistas" data-name="burger das galáxias">
+        <div class="food-art art-galaxias"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Burger das Galáxias</h3>
+          <p>Pão brioche, carne artesanal de 120g e cheddar derretido.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 24,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Burger%20das%20Galáxias">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="burgers protagonistas" data-name="wars salad">
+        <div class="food-art art-wars"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Wars Salad</h3>
+          <p>Pão, carne 120g, cheddar, molho verde, alface e tomate.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 29,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Wars%20Salad">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="burgers protagonistas" data-name="batman burger">
+        <div class="food-art art-batman"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Batman Burger</h3>
+          <p>Pão brioche, carne, cheddar, cebola, picles, ketchup e mostarda.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 29,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Batman%20Burger">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="burgers protagonistas" data-name="todo mundo odeia doritos">
+        <div class="food-art art-doritos"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Todo Mundo Odeia Doritos</h3>
+          <p>Carne artesanal, cheddar, alface, tomate, molho verde e crocância.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 34,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Todo%20Mundo%20Odeia%20Doritos">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="burgers protagonistas" data-name="lucyfer bacon star">
+        <div class="food-art art-lucyfer"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Lucyfer Bacon Star</h3>
+          <p>Pão brioche vermelho, carne 160g, cheddar, bacon e molho de bacon.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 39,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Lucyfer%20Bacon%20Star">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="burgers protagonistas" data-name="burger protagonista">
+        <div class="food-art art-protagonista"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Burger Protagonista</h3>
+          <p>Carne 160g, cebola caramelizada, cheddar, bacon e barbecue.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 39,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Burger%20Protagonista">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="burgers protagonistas" data-name="burger censurado">
+        <div class="food-art art-censurado"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Burger Censurado</h3>
+          <p>Pão brioche, carne 160g, mussarela empanada, bacon e molho verde.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 40,00</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Burger%20Censurado">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="burgers protagonistas" data-name="peaky blinders coalho">
+        <div class="food-art art-peaky"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Burgers protagonistas</span>
+          <h3>Peaky Blinders Coalho</h3>
+          <p>Pão defumado, carne 120g, queijo coalho, vinagrete e molho grill.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 44,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Peaky%20Blinders%20Coalho">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="spin-off de frango" data-name="los pollos">
+        <div class="food-art art-pollos"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Spin-off de frango</span>
+          <h3>Los Pollos</h3>
+          <p>Pão brioche, burger de frango, cheddar, alface, tomate e molho verde.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 29,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Los%20Pollos">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo x burger das galáxias">
+        <div class="food-art art-combo-galaxias"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo X Burger das Galáxias</h3>
+          <p>Burger, fritas pequenas e Coca-Cola.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 37,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20X%20Burger%20das%20Galáxias">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo batman">
+        <div class="food-art art-combo-batman"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo Batman</h3>
+          <p>Burger, fritas pequenas e Coca-Cola.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 37,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Batman">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo todo mundo odeia doritos">
+        <div class="food-art art-combo-doritos"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo Todo Mundo Odeia Doritos</h3>
+          <p>Burger, fritas pequenas e Coca-Cola.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 44,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Todo%20Mundo%20Odeia%20Doritos">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo wars salad">
+        <div class="food-art art-combo-wars"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo Wars Salad</h3>
+          <p>Burger, fritas e bebida.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 39,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Wars%20Salad">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo burger o protagonista">
+        <div class="food-art art-combo-protagonista"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo Burger O Protagonista</h3>
+          <p>Burger, fritas pequenas e Coca-Cola.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 54,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Burger%20O%20Protagonista">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo peaky blinders">
+        <div class="food-art art-combo-peaky"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo Peaky Blinders</h3>
+          <p>Burger, fritas e bebida.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 59,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Peaky%20Blinders">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo lucyfer">
+        <div class="food-art art-combo-lucyfer"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo Lucyfer</h3>
+          <p>Burger, fritas individual e Coca-Cola.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 54,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Lucyfer">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="combos" data-name="combo game of fomes">
+        <div class="food-art art-game"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Combos</span>
+          <h3>Combo Game of Fomes</h3>
+          <p>Burger duplo, fritas e Coca-Cola.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 59,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Game%20of%20Fomes">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="kids" data-name="combo kids toy story">
+        <div class="food-art art-kids"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Kids</span>
+          <h3>Combo Kids Toy Story</h3>
+          <p>Burger, fritas, refrigerante e brinde temático.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 34,90</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Combo%20Kids%20Toy%20Story">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="porções" data-name="porção de batata individual">
+        <div class="food-art art-fritas"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Porções</span>
+          <h3>Porção de Batata Individual</h3>
+          <p>Porção de aproximadamente 150g.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 15,00</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Porção%20de%20Batata%20Individual">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="porções" data-name="chicken supreme">
+        <div class="food-art art-chicken"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Porções</span>
+          <h3>Chicken Supreme</h3>
+          <p>Porção com 10 unidades.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 22,00</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Chicken%20Supreme">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="porções" data-name="cebola empanada">
+        <div class="food-art art-onion"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Porções</span>
+          <h3>Cebola Empanada</h3>
+          <p>Porção com 10 unidades.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 19,00</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Cebola%20Empanada">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article class="menu-card" data-category="porções" data-name="batata o protagonista premium">
+        <div class="food-art art-premium"><span>🍔</span></div>
+        <div class="menu-card-body">
+          <span class="menu-category">Porções</span>
+          <h3>Batata O Protagonista Premium</h3>
+          <p>Batata crinkle, queijo coalho, cheddar da casa e bacon.</p>
+          <div class="menu-bottom">
+            <strong>A partir de R$ 45,00</strong>
+            <a class="order-btn" target="_blank" rel="noopener"
+               href="https://wa.me/?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20o%20Batata%20O%20Protagonista%20Premium">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </article>
+    
+        </div>
+        <p id="emptyState" class="empty-state" hidden>Nenhum item encontrado.</p>
+
+        <p class="menu-note">Valores e disponibilidade devem ser confirmados diretamente com a Julius Burgers antes da publicação comercial definitiva.</p>
+      </div>
+    </section>
+
+    <section class="experience" id="experiencia">
+      <div class="container experience-grid">
+        <div>
+          <span class="eyebrow">EXPERIÊNCIA DIGITAL</span>
+          <h2>MENOS CLIQUES. MAIS <em>FOME.</em></h2>
+          <p>O novo site foi pensado para mostrar o cardápio sem obrigar o cliente a sair da página, reforçar a identidade da marca e facilitar o caminho até o pedido.</p>
+        </div>
+        <div class="experience-cards">
+          <article><b>01</b><h3>Cardápio próprio</h3><p>Produtos visíveis e organizados dentro do site.</p></article>
+          <article><b>02</b><h3>Pedido direto</h3><p>Botões de ação em cada produto.</p></article>
+          <article><b>03</b><h3>Mobile first</h3><p>Experiência pensada para quem acessa pelo celular.</p></article>
+          <article><b>04</b><h3>Marca em destaque</h3><p>Visual forte e coerente com a personalidade da Julius.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container contact-inner">
+        <img src="assets/julius-logo.png" alt="Julius Burgers">
+        <div>
+          <span class="eyebrow">PEDIDOS E CONTATO</span>
+          <h2>PRONTO PRA MATAR A FOME?</h2>
+          <p>Conecte os botões ao WhatsApp oficial, iFood e demais canais da unidade.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.instagram.com/julius.burgers/" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn-outline light" href="https://juliusburgers.com.br/" target="_blank" rel="noopener">Site atual</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <img src="assets/julius-logo.png" alt="Julius Burgers">
+      <p>Proposta de novo site para Julius Burgers.</p>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
